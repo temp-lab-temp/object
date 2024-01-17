@@ -1,0 +1,7 @@
+export enum MovieType{
+  AMOUNT_DISCOUNT,
+  PERCENT_DISCOUNT,
+  NONE_PERCEMT,
+}
+
+export type TMovieType = "AMOUNT_DISCOUNT" | "PERCENT_DISCOUNT" | "NONE_PERCENT"
