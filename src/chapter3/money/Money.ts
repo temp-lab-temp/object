@@ -28,4 +28,8 @@ export class Money {
   isGreaterThanOrEqual(other: Money): boolean {
     return this.amount >= other.amount
   }
+
+  getAmount(): number{
+    return this.amount;
+  }
 }

@@ -1,9 +1,12 @@
 import { Movie } from "./Movie";
 
 export class Screening {
-  private movie: Movie;
-  private sequence: number;
-  private whenScreened: Date;
+
+  constructor(private movie: Movie, private sequence: number, private whenScreened: Date){
+    this.movie = movie;
+    this.sequence = sequence;
+    this.whenScreened = whenScreened;
+  }
 
   getMovie(): Movie{
     return this.movie;

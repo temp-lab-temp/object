@@ -1,22 +1,32 @@
 import { Money } from "../../money/Money";
-import { TMovieType } from "./MovieType";
+import { MovieType } from "./MovieType";
 import { DiscountCondition } from "./discountCondition";
 
 export class Movie {
-  private title: string;
-  private runningTime: number;
-  private fee: Money;
-  private discountConditons: DiscountCondition[];
 
-  private movieType: TMovieType;
-  private discountAmount: Money;
-  private discoutPercent: number;
+  constructor(
+    private title: string,
+    private runningTime: number,
+    private fee: Money,
+    private discountConditons: DiscountCondition[],
+  
+    private movieType: MovieType,
+    private discountAmount: Money,
+    private discoutPercent: number){
+      this.title,
+      this.runningTime,
+      this.fee,
+      this.discountConditons,
+      this.movieType,
+      this.discountAmount,
+      this.discoutPercent
+    }
 
-  getMovieType(): TMovieType{
+  getMovieType(): MovieType{
     return this.movieType;
   }
 
-  setMovieType(movieType: TMovieType){
+  setMovieType(movieType: MovieType){
     this.movieType = movieType;
   }
 

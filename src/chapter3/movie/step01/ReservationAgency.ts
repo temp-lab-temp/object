@@ -5,8 +5,9 @@ import { Movie } from "./Movie";
 import { Reservation } from "./Reservation";
 import { Screening } from "./Screening";
 
+
 export class ReservationAgency {
-   public reserve(screening: Screening, customer: Customer, audienceCount: number ): Reservation{
+    public reserve(screening: Screening, customer: Customer, audienceCount: number ): Reservation{
     const movie: Movie = screening.getMovie();
     let fee: Money
 
