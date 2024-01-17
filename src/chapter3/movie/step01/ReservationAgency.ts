@@ -37,7 +37,7 @@ export class ReservationAgency {
           discountAmount = Money.ZERO;
           break;
       }
-      fee = movie.getFee().minus(discountAmount);
+      fee = movie.getFee().minus(discountAmount).times(audienceCount);
     } else{
       fee = movie.getFee();
     }
