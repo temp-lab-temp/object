@@ -27,19 +27,19 @@ export class Reservation {
     return this.screening;
   }
   setScreening(screening: Screening){
-    this.screening = this.screening;
+    this.screening = screening;
   }
   getFee(): Money{
     return this.fee;
   }
   setFee(fee: Money){
-    this.fee = this.fee;
+    this.fee = fee;
   }
   getAudienceCount(): number{
     return this.audienceCount;
   }
   setAudienceCount(audienceCount: number){
-    this.audienceCount = this.audienceCount;
+    this.audienceCount = audienceCount;
   }
 
 }

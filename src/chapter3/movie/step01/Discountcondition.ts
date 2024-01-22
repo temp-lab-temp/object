@@ -1,13 +1,21 @@
 import { DiscountConditionType } from "./DiscountConditionType";
 
 export class DiscountCondition {
-  private type: DiscountConditionType;
+  constructor(
+    private type: DiscountConditionType,
 
-  private sequence: number;
-
-  private dayOfWeek: number;
-  private startTime: Date;
-  private endTime: Date;
+    private sequence: number,
+  
+    private dayOfWeek: number,
+    private startTime: Date,
+    private endTime: Date,
+  ) {
+    this.type;
+    this.sequence;
+    this.dayOfWeek;
+    this.startTime;
+    this.endTime
+  }
 
   getType(): DiscountConditionType{
     return this.type;
